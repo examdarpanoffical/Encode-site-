@@ -1,0 +1,125 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080f20"><title>Consultation Booking | Encode Technologies</title><meta name="description" content="Book an initial IT consultancy session."><link rel="canonical" href="https://encodetechnologies.web.app/consultation-payment.html"><link rel="icon" type="image/svg+xml" href="/assets/encode-mark.svg"><link rel="stylesheet" href="/assets/site.css"></head><body><header class="site-header"><div class="wrap nav"><a class="brand" href="/"><span class="brand-mark">E</span><span><span class="brand-name">ENCODE TECHNOLOGIES</span><span class="brand-sub">SOFTWARE • DIGITAL</span></span></a><nav class="navlinks"><a href="/">Home</a><a href="/about.html">About</a><a href="/services.html">Services</a><a href="/#platforms">Platforms</a><a href="/#approach">Approach</a><a href="/contact.html">Contact</a></nav><div class="nav-actions"><a class="btn btn-primary" href="/payments.html">Payments ↗</a><button class="menu-btn" aria-label="Open navigation" onclick="document.querySelector('.mobile-nav').classList.toggle('open')">☰</button></div></div><nav class="mobile-nav"><a href="/">Home</a><a href="/about.html">About</a><a href="/services.html">Services</a><a href="/#platforms">Platforms</a><a href="/#approach">Our Approach</a><a href="/contact.html">Contact</a><a href="/#payments">Pay Online</a></nav></header><main><section class="payment-page"><div class="wrap payment-shell"><div class="payment-info"><span class="eyebrow">01 · CONSULTATION BOOKING</span><h1>Start with a focused conversation.</h1><p>Book an initial IT consultancy session to discuss your website, mobile app, software product, integrations or technical requirements.</p><ul class="checklist"><li>Initial requirement discussion</li><li>High-level direction and next steps</li><li>One-time consultation booking fee</li></ul><p style="margin-top:28px;color:#8fa8c9;font-size:12px">Need a custom project quote? <a href="/contact.html" style="color:#80dfff">Talk to our team →</a></p></div><div class="payment-form"><h2>Consultation fee</h2><p>One-time booking amount</p><div class="payment-price" style="color:#10213a">₹499</div><button class="btn btn-primary" onclick="initiateRazorpayCheckout(49900,'IT Consultancy & Project Onboarding')">Pay ₹499 securely ↗</button><div id="global-payment-alert" class="payment-alert"></div><p class="secure-note">You will complete payment in Razorpay checkout. Review the <a href="/refund-cancellation-policy.html">refund policy</a> before paying.</p></div></div></section></main><footer class="site-footer"><div class="wrap"><div class="footer-grid"><div><a class="brand" href="/"><span class="brand-mark">E</span><span><span class="brand-name" style="color:white">ENCODE TECHNOLOGIES</span><span class="brand-sub" style="color:#91a1ba">SOFTWARE • DIGITAL</span></span></a><p class="footer-copy">Engineering dependable digital products for businesses, founders and institutions. Based in Rajasthan, India. Working across web, mobile and cloud.</p><p class="footer-copy">MSME Udyam: UDYAM-RJ-04-0039772</p></div><div><div class="footer-title">Explore</div><div class="footer-links"><a href="/about.html">About the company</a><a href="/services.html">Services & capabilities</a><a href="/#platforms">Platforms & products</a><a href="/contact.html">Contact & enquiries</a></div></div><div><div class="footer-title">Policies & support</div><div class="footer-links"><a href="/privacy-policy.html">Privacy policy</a><a href="/terms-of-service.html">Terms of service</a><a href="/refund-cancellation-policy.html">Refund & cancellation</a><a href="/payment-policy.html">Payment policy</a><a href="mailto:encodetechnolgies@gmail.com">encodetechnolgies@gmail.com</a><a href="tel:+916367358380">+91 63673 58380</a></div></div></div><div class="footer-bottom"><span>© 2026 Encode Technologies. All rights reserved.</span><span>Jeerod, Artu, Baran, Rajasthan 325207, India</span></div></div></footer><script src="https://checkout.razorpay.com/v1/checkout.js"></script><script>
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{const item=q.closest('.faq-item');item.classList.toggle('open');q.querySelector('span').textContent=item.classList.contains('open')?'−':'＋'}));
+        // Public Key ID only (Never expose KEY_SECRET on frontend)
+        const PUBLIC_RAZORPAY_KEY_ID = "rzp_live_TqQIs8Y5uKxTnF";
+
+        function showStatusMessage(message, type) {
+            const boxes = [
+                document.getElementById('payment-status-box'),
+                document.getElementById('global-payment-alert')
+            ];
+            boxes.forEach(box => {
+                if (!box) return;
+                box.classList.remove('hidden', 'bg-emerald-50', 'text-emerald-700', 'border-emerald-200', 'bg-red-50', 'text-red-700', 'border-red-200', 'bg-amber-50', 'text-amber-700', 'border-amber-200', 'bg-sky-50', 'text-sky-700', 'border-sky-200');
+                if (type === 'success') {
+                    box.classList.add('bg-emerald-50', 'text-emerald-700', 'border-emerald-200');
+                } else if (type === 'error') {
+                    box.classList.add('bg-red-50', 'text-red-700', 'border-red-200');
+                } else if (type === 'warning') {
+                    box.classList.add('bg-amber-50', 'text-amber-700', 'border-amber-200');
+                } else {
+                    box.classList.add('bg-sky-50', 'text-sky-700', 'border-sky-200');
+                }
+                box.innerText = message;
+            });
+        }
+
+        function payCustomAmount() {
+            const input = document.getElementById('customAmountInput');
+            const rupees = parseFloat(input.value);
+            if (isNaN(rupees) || rupees < 1) {
+                showStatusMessage("Minimum amount must be at least ₹1 (100 paise).", "error");
+                return;
+            }
+            const amountInPaise = Math.round(rupees * 100);
+            initiateRazorpayCheckout(amountInPaise, "Custom Project & Service Payment");
+        }
+
+        async function initiateRazorpayCheckout(amountInPaise, descriptionText) {
+            if (!amountInPaise || amountInPaise < 100) {
+                showStatusMessage("Minimum payment amount is ₹1 (100 paise).", "error");
+                return;
+            }
+
+            showStatusMessage("Initializing secure Razorpay checkout...", "info");
+
+            let orderData = null;
+
+            // Step 1: Try calling Backend /api/create-order if available
+            try {
+                const res = await fetch('/api/create-order', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        amount: amountInPaise,
+                        currency: 'INR',
+                        receipt: 'rcpt_' + Date.now()
+                    })
+                });
+                if (res.ok) {
+                    orderData = await res.json();
+                }
+            } catch (e) {
+                // Static Firebase Hosting fallback: continues with client-side checkout
+                console.log("Static hosting mode detected, opening client-side checkout.");
+            }
+
+            // Step 2: Configure Razorpay Modal Options
+            const options = {
+                key: (orderData && orderData.key_id) ? orderData.key_id : PUBLIC_RAZORPAY_KEY_ID,
+                amount: (orderData && orderData.amount) ? orderData.amount : amountInPaise,
+                currency: (orderData && orderData.currency) ? orderData.currency : "INR",
+                name: "Encode Technologies",
+                description: descriptionText || "Software & Cloud Services",
+                handler: async function (response) {
+                    // Step 3: If Order ID was generated by Backend, verify signature on Backend
+                    if (orderData && orderData.order_id && response.razorpay_signature) {
+                        try {
+                            const verifyRes = await fetch('/api/verify-payment', {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({
+                                    razorpay_order_id: response.razorpay_order_id,
+                                    razorpay_payment_id: response.razorpay_payment_id,
+                                    razorpay_signature: response.razorpay_signature
+                                })
+                            });
+                            const verifyJson = await verifyRes.json();
+                            if (verifyRes.ok && verifyJson.success) {
+                                showStatusMessage("Payment Successful & Signature Verified! Payment ID: " + response.razorpay_payment_id, "success");
+                            } else {
+                                showStatusMessage("Payment Signature Verification Failed: " + (verifyJson.error || "Mismatch"), "error");
+                            }
+                        } catch (err) {
+                            showStatusMessage("Error verifying payment: " + err.message, "error");
+                        }
+                    } else {
+                        // Direct Frontend Checkout Success
+                        showStatusMessage("Payment Successful! Reference Payment ID: " + response.razorpay_payment_id, "success");
+                    }
+                },
+                modal: {
+                    ondismiss: function () {
+                        showStatusMessage("Payment cancelled by user.", "warning");
+                    }
+                },
+                theme: {
+                    color: "#0284c7"
+                }
+            };
+
+            if (orderData && orderData.order_id) {
+                options.order_id = orderData.order_id;
+            }
+
+            const rzp = new Razorpay(options);
+
+            rzp.on('payment.failed', function (response) {
+                const reason = (response.error && response.error.description) ? response.error.description : "Transaction failed";
+                showStatusMessage("Payment Failed: " + reason, "error");
+            });
+
+            rzp.open();
+        }
+
+</script></body></html></body></html>
