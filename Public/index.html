@@ -157,13 +157,13 @@
             </a>
 
             <!-- Desktop Nav -->
-            <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-600">
-                <a href="#services" class="hover:text-slate-900 transition">Services</a>
-                <a href="#global-cloud" class="hover:text-slate-900 transition">Global Cloud</a>
+            <nav class="hidden lg:flex items-center gap-5 text-sm font-medium text-slate-600" aria-label="Main navigation">
+                <a href="/" class="hover:text-slate-900 transition">Home</a>
+                <a href="/about.html" class="hover:text-slate-900 transition">About</a>
+                <a href="/services.html" class="hover:text-slate-900 transition">Services</a>
                 <a href="#work" class="hover:text-slate-900 transition">Platforms</a>
                 <a href="#payments" class="hover:text-slate-900 transition">Pricing & Pay</a>
-                <a href="#faq" class="hover:text-slate-900 transition">FAQ</a>
-                <a href="#contact" class="hover:text-slate-900 transition">Contact</a>
+                <a href="/contact.html" class="hover:text-slate-900 transition">Contact</a>
             </nav>
 
             <!-- CTA -->
@@ -179,13 +179,15 @@
 
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-5 pt-3 pb-6 space-y-2.5 text-sm font-medium text-slate-700">
-            <a href="#services" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-100 hover:text-slate-900">Services</a>
+            <a href="/" class="block py-2 border-b border-slate-100 hover:text-slate-900">Home</a>
+            <a href="/about.html" class="block py-2 border-b border-slate-100 hover:text-slate-900">About</a>
+            <a href="/services.html" class="block py-2 border-b border-slate-100 hover:text-slate-900">Services</a>
             <a href="#global-cloud" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-100 hover:text-slate-900">Global Cloud</a>
             <a href="#work" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-100 hover:text-slate-900">Platforms & Work</a>
             <a href="#payments" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-100 hover:text-slate-900">Pricing & Pay</a>
             <a href="#leadership" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-100 hover:text-slate-900">Leadership</a>
             <a href="#faq" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-100 hover:text-slate-900">FAQ</a>
-            <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 hover:text-slate-900">Contact Us</a>
+            <a href="/contact.html" class="block py-2 hover:text-slate-900">Contact Us</a>
         </div>
     </header>
 
@@ -585,10 +587,7 @@
                         We collect minimal necessary data (name, email, phone) strictly for account creation, service fulfillment, and RBI-compliant payment processing via Razorpay. User data is never commercialized.
                     </p>
                 </div>
-                <button onclick="openModal('privacyModal')" class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-sky-600 hover:text-sky-700 flex items-center justify-between w-full">
-                    <span>Read Privacy Policy</span>
-                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
-                </button>
+                <a href="/privacy-policy.html" class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-sky-600 hover:text-sky-700 flex items-center justify-between w-full"><span>Read full Privacy Policy</span><i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
             </div>
 
             <div class="light-card p-7 rounded-2xl flex flex-col justify-between">
@@ -601,10 +600,7 @@
                         By accessing applications and web portals operated by Encode Technologies, users agree to intellectual property protections, fair usage guidelines, and service agreements governed by Indian law.
                     </p>
                 </div>
-                <button onclick="openModal('termsModal')" class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-sky-600 hover:text-sky-700 flex items-center justify-between w-full">
-                    <span>Read Terms of Use</span>
-                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
-                </button>
+                <a href="/terms-of-service.html" class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-sky-600 hover:text-sky-700 flex items-center justify-between w-full"><span>Read full Terms of Service</span><i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
             </div>
 
             <div class="light-card p-7 rounded-2xl flex flex-col justify-between">
@@ -617,10 +613,7 @@
                         Recurring subscription mandates can be managed or cancelled anytime prior to billing cycles. Verified refunds or duplicate debit reversals are settled within 5–7 business days.
                     </p>
                 </div>
-                <button onclick="openModal('refundModal')" class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-sky-600 hover:text-sky-700 flex items-center justify-between w-full">
-                    <span>Read Refund Policy</span>
-                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
-                </button>
+                <a href="/refund-cancellation-policy.html" class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-sky-600 hover:text-sky-700 flex items-center justify-between w-full"><span>Read full Refund & Cancellation Policy</span><i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
             </div>
         </div>
     </section>
@@ -757,10 +750,13 @@
                 <p class="text-slate-500">Registered Office: Jeerod, Artu, Baran, Rajasthan - 325207, India</p>
             </div>
             <div class="flex flex-wrap gap-4 sm:gap-6 text-slate-700 font-medium">
-                <button onclick="openModal('privacyModal')" class="hover:text-sky-600">Privacy Policy</button>
-                <button onclick="openModal('termsModal')" class="hover:text-sky-600">Terms of Service</button>
-                <button onclick="openModal('refundModal')" class="hover:text-sky-600">Refund Policy</button>
-                <a href="#contact" class="hover:text-sky-600">Contact</a>
+                <a href="/about.html" class="hover:text-sky-600">About</a>
+                <a href="/services.html" class="hover:text-sky-600">Services</a>
+                <a href="/privacy-policy.html" class="hover:text-sky-600">Privacy Policy</a>
+                <a href="/terms-of-service.html" class="hover:text-sky-600">Terms of Service</a>
+                <a href="/refund-cancellation-policy.html" class="hover:text-sky-600">Refund Policy</a>
+                <a href="/payment-policy.html" class="hover:text-sky-600">Payment Policy</a>
+                <a href="/contact.html" class="hover:text-sky-600">Contact</a>
             </div>
         </div>
         <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-slate-500">
