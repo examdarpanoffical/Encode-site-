@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://encodetechnologies.web.app/sitemap.xml
+Sitemap: https://encodetechnologies.web.app/sitemap_index.xml
