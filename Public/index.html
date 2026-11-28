@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Encode Technologies | Global Software & Cloud Infrastructure</title>
-    <meta name="description" content="Encode Technologies is a premier software development enterprise founded by Lokesh Meena (UDYAM-RJ-04-0039772).">
-    
+    <title>Encode Technologies | Global Software, Cloud & Digital Engineering</title>
+    <meta name="description" content="Encode Technologies is a global software engineering and digital infrastructure enterprise founded by Lokesh Meena (UDYAM-RJ-04-0039772).">
+
     <!-- Google Search Console Verification Tag -->
     <meta name="google-site-verification" content="OMV6bJ_SjfwZzvkKCCOK6fUWEw-rfGJ9lXJJoMzxtyg" />
 
-    <!-- Google Fonts: Inter -->
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -29,6 +29,7 @@
                 extend: {
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
                     }
                 }
             }
@@ -47,8 +48,11 @@
             box-sizing: border-box;
             word-wrap: break-word;
         }
+        h1, h2, h3, h4 {
+            font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+        }
         .gradient-text {
-            background: linear-gradient(135deg, #0f172a 0%, #0284c7 60%, #2563eb 100%);
+            background: linear-gradient(135deg, #0f172a 0%, #0284c7 55%, #2563eb 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -58,44 +62,50 @@
             transition: all 0.2s ease;
         }
         .btn-primary:hover {
-            opacity: 0.92;
+            opacity: 0.94;
             transform: translateY(-1px);
-            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.3);
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.28);
         }
         .light-card {
             background: #ffffff;
             border: 1px solid #e2e8f0;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
-            transition: all 0.25s ease;
+            box-shadow: 0 2px 6px rgba(15, 23, 42, 0.03);
+            transition: all 0.22s ease;
         }
         .light-card:hover {
             border-color: #cbd5e1;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+            box-shadow: 0 14px 28px -8px rgba(15, 23, 42, 0.07);
             transform: translateY(-2px);
+        }
+        .grid-bg {
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 24px 24px;
         }
     </style>
 </head>
-<body class="antialiased selection:bg-sky-500 selection:text-white">
+<body class="antialiased selection:bg-sky-600 selection:text-white">
 
     <!-- Top Verified Bar -->
     <div class="bg-slate-900 text-slate-200 border-b border-slate-800 text-[11px] sm:text-xs py-2 px-3 text-center">
-        <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
             <span class="inline-flex items-center gap-1.5 font-medium text-slate-300">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
                 Govt. of India MSME Registered:
             </span>
             <span class="font-mono text-sky-400 font-semibold">UDYAM-RJ-04-0039772</span>
             <span class="hidden sm:inline text-slate-700">|</span>
             <span class="text-slate-400">NIC 62011 (Software Engineering)</span>
+            <span class="hidden md:inline text-slate-700">|</span>
+            <span class="hidden md:inline text-emerald-400 font-medium">Global Edge Delivery</span>
         </div>
     </div>
 
     <!-- Header / Navbar -->
-    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200 w-full shadow-xs">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-18 sm:h-20 flex items-center justify-between">
-            
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 w-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-18 sm:h-20 flex items-center justify-between gap-4">
+
             <!-- Logo & Brand -->
-            <a href="#" class="flex items-center gap-3 group">
+            <a href="#" class="flex items-center gap-3 shrink-0">
                 <svg class="w-9 h-9 sm:w-10 sm:h-10 shrink-0" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <linearGradient id="nGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -114,148 +124,329 @@
                     <div class="font-bold text-base sm:text-lg tracking-wider leading-none text-slate-900 flex items-center gap-1">
                         <span>ENCODE</span> <span class="text-sky-600">TECH</span>
                     </div>
-                    <span class="text-[8px] sm:text-[9px] tracking-[0.3em] text-slate-500 font-medium mt-0.5 uppercase">Software Enterprise</span>
+                    <span class="text-[8px] sm:text-[9px] tracking-[0.26em] text-slate-500 font-semibold mt-1 uppercase">Global Software Enterprise</span>
                 </div>
             </a>
 
             <!-- Desktop Nav -->
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-600">
                 <a href="#services" class="hover:text-slate-900 transition">Services</a>
+                <a href="#global-cloud" class="hover:text-slate-900 transition">Global Cloud</a>
+                <a href="#work" class="hover:text-slate-900 transition">Platforms</a>
                 <a href="#payments" class="hover:text-slate-900 transition">Pricing & Pay</a>
-                <a href="#ecosystem" class="hover:text-slate-900 transition">Ecosystem</a>
-                <a href="#leadership" class="hover:text-slate-900 transition">Leadership</a>
-                <a href="#compliance" class="hover:text-slate-900 transition">Governance</a>
+                <a href="#faq" class="hover:text-slate-900 transition">FAQ</a>
                 <a href="#contact" class="hover:text-slate-900 transition">Contact</a>
             </nav>
 
             <!-- CTA -->
-            <div class="flex items-center gap-2">
-                <a href="#payments" class="btn-primary text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-lg shadow-sm">
+            <div class="flex items-center gap-2 shrink-0">
+                <a href="#payments" class="btn-primary text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-lg">
                     Pay Online
                 </a>
-                <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-lg border border-slate-200 text-slate-700 hover:text-slate-900 bg-slate-50" aria-label="Menu">
+                <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg border border-slate-200 text-slate-700 hover:text-slate-900 bg-slate-50" aria-label="Menu">
                     <i data-lucide="menu" class="w-5 h-5"></i>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-5 pt-3 pb-6 space-y-3 text-sm font-medium text-slate-700">
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-5 pt-3 pb-6 space-y-2.5 text-sm font-medium text-slate-700">
             <a href="#services" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-100 hover:text-slate-900">Services</a>
+            <a href="#global-cloud" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-100 hover:text-slate-900">Global Cloud</a>
+            <a href="#work" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-100 hover:text-slate-900">Platforms & Work</a>
             <a href="#payments" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-100 hover:text-slate-900">Pricing & Pay</a>
-            <a href="#ecosystem" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-100 hover:text-slate-900">Ecosystem</a>
             <a href="#leadership" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-100 hover:text-slate-900">Leadership</a>
-            <a href="#compliance" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-100 hover:text-slate-900">Governance</a>
+            <a href="#faq" onclick="toggleMobileMenu()" class="block py-2 border-b border-slate-100 hover:text-slate-900">FAQ</a>
             <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 hover:text-slate-900">Contact Us</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative pt-16 pb-20 sm:pt-24 sm:pb-28 px-4 sm:px-6 max-w-6xl mx-auto text-center">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs font-medium mb-7">
-            <i data-lucide="shield-check" class="w-3.5 h-3.5 shrink-0 text-emerald-600"></i>
-            <span>Verified Micro Enterprise — Govt. of India</span>
+    <section class="relative pt-14 pb-20 sm:pt-20 sm:pb-24 px-4 sm:px-6 max-w-7xl mx-auto grid-bg">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-sky-200 text-sky-700 text-xs font-semibold mb-6 shadow-2xs">
+                <i data-lucide="globe" class="w-3.5 h-3.5 shrink-0 text-sky-600"></i>
+                <span>Global Software Engineering & Cloud Infrastructure</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-6xl lg:text-[64px] font-extrabold tracking-tight text-slate-900 leading-[1.08] mb-6">
+                Engineering Resilient <br>
+                <span class="gradient-text">Digital Systems at Scale</span>
+            </h1>
+
+            <p class="max-w-2xl mx-auto text-slate-600 text-base sm:text-lg mb-9 leading-relaxed">
+                <strong>Encode Technologies</strong> builds production-grade mobile applications, high-throughput cloud APIs, EdTech platforms, and payment-enabled web products engineered for worldwide reach.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 max-w-md sm:max-w-none mx-auto">
+                <button onclick="initiateRazorpayCheckout(49900, 'IT Consultancy & Project Onboarding')" class="w-full sm:w-auto btn-primary text-white font-semibold text-sm px-7 py-4 rounded-xl flex items-center justify-center gap-2 cursor-pointer">
+                    <i data-lucide="credit-card" class="w-4 h-4"></i>
+                    <span>Book Consultation (₹499)</span>
+                </button>
+                <a href="#work" class="w-full sm:w-auto bg-white border border-slate-200 text-slate-800 font-semibold text-sm px-7 py-4 rounded-xl hover:border-slate-300 flex items-center justify-center gap-2 transition">
+                    <span>Explore Platforms</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <!-- Global Payment Alert Box -->
+            <div id="global-payment-alert" class="hidden max-w-xl mx-auto mt-6 p-4 rounded-xl text-xs sm:text-sm font-medium border"></div>
         </div>
 
-        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 leading-[1.1] mb-6">
-            Building Scalable <br>
-            <span class="gradient-text">Digital Infrastructure</span>
-        </h1>
-
-        <p class="max-w-2xl mx-auto text-slate-600 text-base sm:text-lg mb-10 leading-relaxed">
-            <strong>Encode Technologies</strong> is an elite software engineering and IT consultancy firm delivering high-performance mobile applications, cloud backends, and digital SaaS products.
-        </p>
-
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 max-w-md sm:max-w-none mx-auto">
-            <button onclick="initiateRazorpayCheckout(49900, 'IT Consultancy & Project Onboarding')" class="w-full sm:w-auto btn-primary text-white font-semibold text-sm px-8 py-4 rounded-xl flex items-center justify-center gap-2 cursor-pointer">
-                <i data-lucide="credit-card" class="w-4 h-4"></i>
-                <span>Book Consultation (₹499)</span>
-            </button>
-            <a href="#services" class="w-full sm:w-auto light-card text-slate-700 font-semibold text-sm px-8 py-4 rounded-xl hover:text-slate-900 flex items-center justify-center gap-2">
-                <span>Explore Capabilities</span>
-            </a>
-        </div>
-
-        <!-- Global Payment Alert Box -->
-        <div id="global-payment-alert" class="hidden max-w-lg mx-auto mt-6 p-4 rounded-xl text-xs sm:text-sm font-medium border"></div>
-
-        <!-- Metrics Row -->
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto mt-16 text-left">
-            <div class="light-card p-5 rounded-xl">
-                <div class="text-xs text-slate-500 font-medium">Activity Code</div>
-                <div class="text-xl font-bold text-slate-900 mt-1">NIC 62011</div>
-                <div class="text-[11px] text-slate-500 mt-0.5">Software Programming</div>
+        <!-- Enterprise Metrics Strip -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto mt-14">
+            <div class="light-card p-5 rounded-2xl">
+                <div class="flex items-center justify-between text-xs text-slate-500 font-medium">
+                    <span>Global Edge Delivery</span>
+                    <i data-lucide="globe-2" class="w-4 h-4 text-sky-600"></i>
+                </div>
+                <div class="text-2xl font-extrabold text-slate-900 mt-2">Multi-Region</div>
+                <div class="text-xs text-slate-500 mt-1">Low-latency static & API edge</div>
             </div>
-            <div class="light-card p-5 rounded-xl">
-                <div class="text-xs text-slate-500 font-medium">System Reliability</div>
-                <div class="text-xl font-bold text-slate-900 mt-1">99.9% Uptime</div>
-                <div class="text-[11px] text-slate-500 mt-0.5">Cloud-Native Stack</div>
+
+            <div class="light-card p-5 rounded-2xl">
+                <div class="flex items-center justify-between text-xs text-slate-500 font-medium">
+                    <span>Service Reliability</span>
+                    <i data-lucide="activity" class="w-4 h-4 text-emerald-600"></i>
+                </div>
+                <div class="text-2xl font-extrabold text-slate-900 mt-2">99.9% SLA</div>
+                <div class="text-xs text-slate-500 mt-1">Cloud-native architecture</div>
             </div>
-            <div class="light-card p-5 rounded-xl">
-                <div class="text-xs text-slate-500 font-medium">Core Expertise</div>
-                <div class="text-xl font-bold text-slate-900 mt-1">Full-Stack</div>
-                <div class="text-[11px] text-slate-500 mt-0.5">Web & Mobile Apps</div>
+
+            <div class="light-card p-5 rounded-2xl">
+                <div class="flex items-center justify-between text-xs text-slate-500 font-medium">
+                    <span>Registered Activity</span>
+                    <i data-lucide="code-2" class="w-4 h-4 text-sky-600"></i>
+                </div>
+                <div class="text-2xl font-extrabold text-slate-900 mt-2">NIC 62011</div>
+                <div class="text-xs text-slate-500 mt-1">Software & app engineering</div>
             </div>
-            <div class="light-card p-5 rounded-xl">
-                <div class="text-xs text-slate-500 font-medium">Authorization</div>
-                <div class="text-xl font-bold text-sky-600 mt-1">MSME Verified</div>
-                <div class="text-[11px] text-slate-500 mt-0.5">UDYAM-RJ-04-0039772</div>
+
+            <div class="light-card p-5 rounded-2xl">
+                <div class="flex items-center justify-between text-xs text-slate-500 font-medium">
+                    <span>Enterprise Identity</span>
+                    <i data-lucide="badge-check" class="w-4 h-4 text-sky-600"></i>
+                </div>
+                <div class="text-xl font-extrabold text-sky-700 mt-2 font-mono">MSME Verified</div>
+                <div class="text-xs text-slate-500 mt-1">UDYAM-RJ-04-0039772</div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto border-t border-slate-200">
-        <div class="mb-14 text-left sm:text-center">
-            <span class="text-sky-600 font-semibold text-xs tracking-widest uppercase block mb-2">Capabilities</span>
-            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Core Engineering Services</h2>
-            <p class="text-slate-600 max-w-xl sm:mx-auto mt-3 text-sm">Writing, modifying, testing, and deploying robust software solutions tailored for modern businesses.</p>
+    <!-- Core Engineering Capabilities -->
+    <section id="services" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto border-t border-slate-200">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+            <div>
+                <span class="text-sky-600 font-semibold text-xs tracking-widest uppercase block mb-2">Engineering Capabilities</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">End-to-End Product & Cloud Solutions</h2>
+            </div>
+            <p class="text-slate-600 max-w-md text-sm">
+                From architecture design to production deployment, payment checkout, and ongoing performance optimization.
+            </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="light-card p-8 rounded-2xl flex flex-col justify-between">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="light-card p-7 rounded-2xl flex flex-col justify-between">
                 <div>
-                    <div class="w-12 h-12 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 mb-6">
-                        <i data-lucide="smartphone" class="w-6 h-6"></i>
+                    <div class="w-11 h-11 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 mb-5">
+                        <i data-lucide="smartphone" class="w-5 h-5"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Mobile App Engineering</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                        High-performance Android and cross-platform mobile applications engineered for security and fast distribution across Google Play and Indus Appstore.
+                    <h3 class="text-lg font-bold text-slate-900 mb-2.5">Android & Cross-Platform Apps</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                        Responsive mobile applications built with clean state management, offline resilience, push notifications, and store-ready release pipelines.
                     </p>
                 </div>
-                <div class="text-xs text-slate-500 font-mono pt-4 border-t border-slate-100">Android SDK • Flutter • React Native</div>
+                <div class="text-xs text-slate-500 font-mono pt-4 border-t border-slate-100">Android SDK • Kotlin • Flutter • React Native</div>
             </div>
 
-            <div class="light-card p-8 rounded-2xl flex flex-col justify-between">
+            <div class="light-card p-7 rounded-2xl flex flex-col justify-between">
                 <div>
-                    <div class="w-12 h-12 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 mb-6">
-                        <i data-lucide="cpu" class="w-6 h-6"></i>
+                    <div class="w-11 h-11 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 mb-5">
+                        <i data-lucide="server" class="w-5 h-5"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Cloud Backends & APIs</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                        Scalable server-side architecture, REST APIs, real-time database structuring, and automated recurring billing gateway integrations.
+                    <h3 class="text-lg font-bold text-slate-900 mb-2.5">Cloud Backends & REST APIs</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                        Scalable APIs, serverless functions, relational and NoSQL databases, authentication workflows, and automated deployment pipelines.
                     </p>
                 </div>
-                <div class="text-xs text-slate-500 font-mono pt-4 border-t border-slate-100">Node.js • Firebase • PostgreSQL</div>
+                <div class="text-xs text-slate-500 font-mono pt-4 border-t border-slate-100">Node.js • Firebase • PostgreSQL • REST/JSON</div>
             </div>
 
-            <div class="light-card p-8 rounded-2xl flex flex-col justify-between">
+            <div class="light-card p-7 rounded-2xl flex flex-col justify-between">
                 <div>
-                    <div class="w-12 h-12 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 mb-6">
-                        <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                    <div class="w-11 h-11 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 mb-5">
+                        <i data-lucide="wallet" class="w-5 h-5"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">EdTech & SaaS Platforms</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                        Interactive assessment portals, mock test engines, digital learning ecosystems, and subscription-based digital service web apps.
+                    <h3 class="text-lg font-bold text-slate-900 mb-2.5">Payment & Subscription Systems</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                        Seamless Razorpay checkout flows, milestone invoicing, subscription plans, order tracking, and transparent customer billing states.
                     </p>
                 </div>
-                <div class="text-xs text-slate-500 font-mono pt-4 border-t border-slate-100">React • Next.js • Tailwind CSS</div>
+                <div class="text-xs text-slate-500 font-mono pt-4 border-t border-slate-100">Razorpay Checkout • Webhooks • INR Billing</div>
+            </div>
+
+            <div class="light-card p-7 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="w-11 h-11 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 mb-5">
+                        <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2.5">EdTech & Assessment Portals</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                        Fast content delivery portals, test series engines, leaderboards, and structured knowledge hubs engineered for high concurrent traffic.
+                    </p>
+                </div>
+                <div class="text-xs text-slate-500 font-mono pt-4 border-t border-slate-100">SEO-Ready Web • Mock Engines • Analytics</div>
+            </div>
+
+            <div class="light-card p-7 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="w-11 h-11 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 mb-5">
+                        <i data-lucide="search-check" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2.5">Technical SEO & Search Readiness</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                        Clean semantic HTML, XML sitemaps, `robots.txt` rules, canonical tags, HTTPS enforcement, and Google Search Console indexing hygiene.
+                    </p>
+                </div>
+                <div class="text-xs text-slate-500 font-mono pt-4 border-t border-slate-100">Sitemap XML • Search Console • Core Web Vitals</div>
+            </div>
+
+            <div class="light-card p-7 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <div class="w-11 h-11 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 mb-5">
+                        <i data-lucide="shield" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2.5">Security & Governance Alignment</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-5">
+                        Client-safe key handling, clear legal disclosures, data minimization practices, and predictable release management across environments.
+                    </p>
+                </div>
+                <div class="text-xs text-slate-500 font-mono pt-4 border-t border-slate-100">HTTPS/TLS • Least Privilege • Audit Trails</div>
             </div>
         </div>
     </section>
 
-    <!-- Instant Payment & Service Packages (Razorpay Integrated) -->
-    <section id="payments" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto border-t border-slate-200">
+    <!-- Global Infrastructure & Delivery Model -->
+    <section id="global-cloud" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto border-t border-slate-200">
+        <div class="bg-white rounded-3xl border border-slate-200 p-7 sm:p-12 shadow-2xs">
+            <div class="grid lg:grid-cols-12 gap-10 items-start">
+                <div class="lg:col-span-5 space-y-4">
+                    <span class="text-sky-600 font-semibold text-xs tracking-widest uppercase block">Global Delivery Architecture</span>
+                    <h2 class="text-3xl font-bold text-slate-900 leading-tight">Built for Worldwide Access & Low Latency</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Operating from Rajasthan, India with cloud-first deployment pipelines, Encode Technologies serves users and clients globally over encrypted HTTPS channels.
+                    </p>
+                    <div class="pt-2 space-y-2.5 text-sm text-slate-700">
+                        <div class="flex items-center gap-2.5">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                            <span>Global edge caching for static assets and web portals</span>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                            <span>Version-controlled releases with rapid rollback capability</span>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                            <span>Mobile-first responsive layouts across screens and networks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 grid sm:grid-cols-2 gap-4">
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+                        <div class="text-xs font-mono text-sky-700 font-semibold mb-1">01 / DISCOVERY & SCOPE</div>
+                        <h3 class="font-bold text-slate-900 text-base mb-1.5">Technical Blueprint</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Define product goals, system flow, data model, UI structure, and release milestones before writing core code.</p>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+                        <div class="text-xs font-mono text-sky-700 font-semibold mb-1">02 / ENGINEERING</div>
+                        <h3 class="font-bold text-slate-900 text-base mb-1.5">Modular Implementation</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Build clean, maintainable frontend and backend components with integrated payment and notification workflows.</p>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+                        <div class="text-xs font-mono text-sky-700 font-semibold mb-1">03 / VERIFICATION</div>
+                        <h3 class="font-bold text-slate-900 text-base mb-1.5">QA, Speed & Search Setup</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Validate cross-device responsiveness, checkout states, SSL serving, sitemaps, and search indexing readiness.</p>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+                        <div class="text-xs font-mono text-sky-700 font-semibold mb-1">04 / SCALE & SUPPORT</div>
+                        <h3 class="font-bold text-slate-900 text-base mb-1.5">Continuous Iteration</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Ship feature updates, monitor uptime, and expand capacity smoothly as user traffic and product scope grow.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flagship Platforms & Case Showcases -->
+    <section id="work" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto border-t border-slate-200">
+        <div class="mb-12 text-left sm:text-center">
+            <span class="text-sky-600 font-semibold text-xs tracking-widest uppercase block mb-2">Ecosystem & Showcases</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Platforms & Engineering Focus Areas</h2>
+            <p class="text-slate-600 max-w-2xl sm:mx-auto mt-3 text-sm">
+                Real-world digital platforms and product architectures built under Encode Technologies.
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-6">
+            <div class="light-card rounded-2xl p-7 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between gap-2 mb-4">
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-sky-50 text-sky-700 border border-sky-100">EdTech Portal</span>
+                        <span class="text-xs font-mono text-slate-400">examdarpan.in</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2.5">ExamDarpan Digital Ecosystem</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                        Educational web portal and digital content distribution network delivering structured exam updates, mock practice experiences, and search-indexed resources.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                    <span>Web • Search Indexing • Community</span>
+                    <span class="font-semibold text-slate-700">Live</span>
+                </div>
+            </div>
+
+            <div class="light-card rounded-2xl p-7 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between gap-2 mb-4">
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">Productivity & Utility</span>
+                        <span class="text-xs font-mono text-slate-400">Android & Cloud</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2.5">Focus & Utility Mobile Suites</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                        Distraction-control tools, widgets, voice-enabled utilities, and subscription-backed mobile experiences designed for daily user retention.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                    <span>Android • Subscription Flows • UX</span>
+                    <span class="font-semibold text-slate-700">Active</span>
+                </div>
+            </div>
+
+            <div class="light-card rounded-2xl p-7 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between gap-2 mb-4">
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200">Commerce & Billing</span>
+                        <span class="text-xs font-mono text-slate-400">Razorpay</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2.5">Direct Checkout & Milestone Pay</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                        Instant INR checkout for technical consultations, deployment milestones, and custom client invoices with real-time status feedback.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                    <span>Standard Checkout • Instant Feedback</span>
+                    <a href="#payments" class="font-semibold text-sky-600 hover:underline">Pay Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instant Payment & Service Packages (Razorpay Integrated - Preserved) -->
+    <section id="payments" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto border-t border-slate-200">
         <div class="mb-14 text-left sm:text-center">
             <span class="text-sky-600 font-semibold text-xs tracking-widest uppercase block mb-2">Instant Razorpay Checkout</span>
             <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Service Plans & Custom Billing</h2>
@@ -296,7 +487,7 @@
             </div>
 
             <!-- Plan 3: Custom Invoice Payment -->
-            <div class="light-card p-8 rounded-2xl flex flex-col justify-between bg-slate-50/60">
+            <div class="light-card p-8 rounded-2xl flex flex-col justify-between bg-slate-50/70">
                 <div>
                     <span class="text-xs font-semibold text-slate-700 bg-white px-3 py-1 rounded-full border border-slate-200">Custom Invoice</span>
                     <h3 class="text-xl font-bold text-slate-900 mt-4">Custom Project Payment</h3>
@@ -319,51 +510,8 @@
         <div id="payment-status-box" class="hidden mt-8 p-4 rounded-xl border text-center text-xs sm:text-sm font-medium"></div>
     </section>
 
-    <!-- Product Ecosystem -->
-    <section id="ecosystem" class="py-16 px-4 sm:px-6 max-w-6xl mx-auto">
-        <div class="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-sm">
-            <div class="grid lg:grid-cols-12 gap-8 items-center">
-                <div class="lg:col-span-7 space-y-4">
-                    <span class="px-3.5 py-1.5 rounded-full bg-sky-50 text-sky-700 text-xs font-semibold border border-sky-100">
-                        In-House Ventures
-                    </span>
-                    <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 leading-snug">
-                        Powering Flagship Platforms Like <span class="gradient-text">ExamDarpan</span>
-                    </h2>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Encode Technologies operates proprietary digital educational portals and utility applications equipped with RBI-compliant Razorpay payment gateway integration for instant digital transactions.
-                    </p>
-                    <div class="pt-2 flex flex-wrap gap-3 text-xs text-slate-700">
-                        <span class="inline-flex items-center gap-1.5 bg-slate-50 border border-slate-200 px-3.5 py-2 rounded-lg">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i> Instant Access
-                        </span>
-                        <span class="inline-flex items-center gap-1.5 bg-slate-50 border border-slate-200 px-3.5 py-2 rounded-lg">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i> 256-Bit SSL Secured
-                        </span>
-                        <span class="inline-flex items-center gap-1.5 bg-slate-50 border border-slate-200 px-3.5 py-2 rounded-lg">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i> Razorpay Verified
-                        </span>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl">
-                        <i data-lucide="shield-check" class="w-6 h-6 text-sky-600 mb-3"></i>
-                        <h4 class="font-bold text-slate-900 text-sm">Verified Merchant</h4>
-                        <p class="text-xs text-slate-500 mt-1">Fully compliant with Razorpay & RBI policies.</p>
-                    </div>
-                    <div class="bg-slate-50 border border-slate-200 p-5 rounded-2xl">
-                        <i data-lucide="terminal" class="w-6 h-6 text-sky-600 mb-3"></i>
-                        <h4 class="font-bold text-slate-900 text-sm">Clean Codebase</h4>
-                        <p class="text-xs text-slate-500 mt-1">Optimized for high-speed performance.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Leadership / Founder Section -->
-    <section id="leadership" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto border-t border-slate-200">
+    <section id="leadership" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto border-t border-slate-200">
         <div class="mb-12 text-left sm:text-center">
             <span class="text-sky-600 font-semibold text-xs tracking-widest uppercase block mb-2">Executive Leadership</span>
             <h2 class="text-3xl font-bold text-slate-900">Founder & Chief Executive Officer</h2>
@@ -391,7 +539,7 @@
     </section>
 
     <!-- Governance & Compliance -->
-    <section id="compliance" class="py-16 px-4 sm:px-6 max-w-6xl mx-auto border-t border-slate-200">
+    <section id="compliance" class="py-16 px-4 sm:px-6 max-w-7xl mx-auto border-t border-slate-200">
         <div class="mb-12 text-left sm:text-center">
             <span class="text-sky-600 font-semibold text-xs tracking-widest uppercase block mb-2">Governance</span>
             <h2 class="text-3xl font-bold text-slate-900">Legal Disclosures & Policies</h2>
@@ -449,11 +597,51 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 px-4 sm:px-6 max-w-4xl mx-auto border-t border-slate-200">
+        <div class="mb-10 text-left sm:text-center">
+            <span class="text-sky-600 font-semibold text-xs tracking-widest uppercase block mb-2">Common Questions</span>
+            <h2 class="text-3xl font-bold text-slate-900">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="space-y-3">
+            <div class="light-card rounded-xl overflow-hidden">
+                <button type="button" onclick="toggleFaq(0)" class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-semibold text-sm text-slate-900">
+                    <span>How are payments processed on Encode Technologies?</span>
+                    <i data-lucide="chevron-down" id="faq-icon-0" class="w-4 h-4 text-slate-500 shrink-0 transition-transform"></i>
+                </button>
+                <div id="faq-panel-0" class="hidden px-5 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                    Payments are initiated through Razorpay Standard Checkout in INR, supporting consultation bookings, milestone packages, and custom invoice amounts.
+                </div>
+            </div>
+
+            <div class="light-card rounded-xl overflow-hidden">
+                <button type="button" onclick="toggleFaq(1)" class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-semibold text-sm text-slate-900">
+                    <span>Can I pay a custom milestone amount?</span>
+                    <i data-lucide="chevron-down" id="faq-icon-1" class="w-4 h-4 text-slate-500 shrink-0 transition-transform"></i>
+                </button>
+                <div id="faq-panel-1" class="hidden px-5 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                    Yes. In the Pricing & Pay section under Custom Project Payment, you can enter any INR amount starting from ₹1 and proceed directly to checkout.
+                </div>
+            </div>
+
+            <div class="light-card rounded-xl overflow-hidden">
+                <button type="button" onclick="toggleFaq(2)" class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-semibold text-sm text-slate-900">
+                    <span>What types of software projects does Encode Technologies handle?</span>
+                    <i data-lucide="chevron-down" id="faq-icon-2" class="w-4 h-4 text-slate-500 shrink-0 transition-transform"></i>
+                </button>
+                <div id="faq-panel-2" class="hidden px-5 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                    We build mobile apps, web applications, cloud backends, EdTech portals, payment integrations, and search-ready digital infrastructure.
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Active Contact & Query Section (Formspree Integrated) -->
-    <section id="contact" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto border-t border-slate-200">
-        <div class="bg-white rounded-3xl p-6 sm:p-12 border border-slate-200 shadow-sm">
+    <section id="contact" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto border-t border-slate-200">
+        <div class="bg-white rounded-3xl p-6 sm:p-12 border border-slate-200 shadow-2xs">
             <div class="grid lg:grid-cols-12 gap-10">
-                
+
                 <!-- Info Column -->
                 <div class="lg:col-span-6 space-y-6">
                     <div>
@@ -504,7 +692,7 @@
                 <div class="lg:col-span-6 bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200">
                     <h3 class="text-lg font-bold text-slate-900 mb-2">Send an Inquiry</h3>
                     <p class="text-xs text-slate-500 mb-6">Fill out the details below and we will respond promptly.</p>
-                    
+
                     <form action="https://formspree.io/f/xjygqarn" method="POST" class="space-y-4 text-sm">
                         <div>
                             <label class="block text-xs text-slate-600 mb-1.5 font-medium">Your Name</label>
@@ -522,7 +710,7 @@
                             <label class="block text-xs text-slate-600 mb-1.5 font-medium">Message</label>
                             <textarea rows="4" name="message" required placeholder="How can we assist you?" class="w-full bg-white border border-slate-300 rounded-lg px-4 py-3 text-slate-900 text-sm focus:outline-none focus:border-sky-600"></textarea>
                         </div>
-                        <button type="submit" class="w-full btn-primary text-white font-semibold py-3.5 rounded-lg text-sm shadow-sm">
+                        <button type="submit" class="w-full btn-primary text-white font-semibold py-3.5 rounded-lg text-sm">
                             Send Message Now
                         </button>
                     </form>
@@ -534,7 +722,7 @@
 
     <!-- Footer -->
     <footer class="border-t border-slate-200 bg-white py-12 px-4 sm:px-6 text-xs text-slate-600">
-        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div class="space-y-1.5">
                 <div class="font-bold text-sm text-slate-900 tracking-wide">ENCODE TECHNOLOGIES</div>
                 <p>Founder & CEO: <strong class="text-slate-900">Lokesh Meena</strong> | MSME Udyam: <strong class="text-sky-600 font-mono">UDYAM-RJ-04-0039772</strong></p>
@@ -547,14 +735,14 @@
                 <a href="#contact" class="hover:text-sky-600">Contact</a>
             </div>
         </div>
-        <div class="max-w-6xl mx-auto mt-8 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-slate-500">
+        <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-slate-500">
             <span>&copy; 2026 Encode Technologies. All rights reserved.</span>
             <span>Direct Inbox: encodetechnolgies@gmail.com | +91 6367358380</span>
         </div>
     </footer>
 
     <!-- Policy Modals -->
-    <div id="privacyModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+    <div id="privacyModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-xs z-50 hidden items-center justify-center p-4">
         <div class="bg-white border border-slate-200 shadow-xl max-w-2xl w-full rounded-2xl p-6 sm:p-8 max-h-[85vh] overflow-y-auto text-xs sm:text-sm text-slate-600 space-y-4">
             <div class="flex justify-between items-center border-b border-slate-100 pb-3">
                 <h3 class="text-base sm:text-lg font-bold text-slate-900">Privacy Policy</h3>
@@ -571,7 +759,7 @@
         </div>
     </div>
 
-    <div id="termsModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+    <div id="termsModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-xs z-50 hidden items-center justify-center p-4">
         <div class="bg-white border border-slate-200 shadow-xl max-w-2xl w-full rounded-2xl p-6 sm:p-8 max-h-[85vh] overflow-y-auto text-xs sm:text-sm text-slate-600 space-y-4">
             <div class="flex justify-between items-center border-b border-slate-100 pb-3">
                 <h3 class="text-base sm:text-lg font-bold text-slate-900">Terms of Service</h3>
@@ -585,7 +773,7 @@
         </div>
     </div>
 
-    <div id="refundModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+    <div id="refundModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-xs z-50 hidden items-center justify-center p-4">
         <div class="bg-white border border-slate-200 shadow-xl max-w-2xl w-full rounded-2xl p-6 sm:p-8 max-h-[85vh] overflow-y-auto text-xs sm:text-sm text-slate-600 space-y-4">
             <div class="flex justify-between items-center border-b border-slate-100 pb-3">
                 <h3 class="text-base sm:text-lg font-bold text-slate-900">Refund & Cancellation Policy</h3>
@@ -612,6 +800,15 @@
         function closeModal(id) {
             document.getElementById(id).classList.add('hidden');
             document.getElementById(id).classList.remove('flex');
+        }
+        function toggleFaq(index) {
+            const panel = document.getElementById('faq-panel-' + index);
+            const icon = document.getElementById('faq-icon-' + index);
+            if (!panel) return;
+            panel.classList.toggle('hidden');
+            if (icon) {
+                icon.classList.toggle('rotate-180');
+            }
         }
 
         // Public Key ID only (Never expose KEY_SECRET on frontend)
@@ -642,7 +839,7 @@
             const input = document.getElementById('customAmountInput');
             const rupees = parseFloat(input.value);
             if (isNaN(rupees) || rupees < 1) {
-                showStatusMessage("❌ Minimum amount must be at least ₹1 (100 paise).", "error");
+                showStatusMessage("Minimum amount must be at least ₹1 (100 paise).", "error");
                 return;
             }
             const amountInPaise = Math.round(rupees * 100);
@@ -651,11 +848,11 @@
 
         async function initiateRazorpayCheckout(amountInPaise, descriptionText) {
             if (!amountInPaise || amountInPaise < 100) {
-                showStatusMessage("❌ Minimum payment amount is ₹1 (100 paise).", "error");
+                showStatusMessage("Minimum payment amount is ₹1 (100 paise).", "error");
                 return;
             }
 
-            showStatusMessage("⏳ Initializing secure Razorpay checkout...", "info");
+            showStatusMessage("Initializing secure Razorpay checkout...", "info");
 
             let orderData = null;
 
@@ -700,21 +897,21 @@
                             });
                             const verifyJson = await verifyRes.json();
                             if (verifyRes.ok && verifyJson.success) {
-                                showStatusMessage("✅ Payment Successful & Signature Verified! Payment ID: " + response.razorpay_payment_id, "success");
+                                showStatusMessage("Payment Successful & Signature Verified! Payment ID: " + response.razorpay_payment_id, "success");
                             } else {
-                                showStatusMessage("❌ Payment Signature Verification Failed: " + (verifyJson.error || "Mismatch"), "error");
+                                showStatusMessage("Payment Signature Verification Failed: " + (verifyJson.error || "Mismatch"), "error");
                             }
                         } catch (err) {
-                            showStatusMessage("❌ Error verifying payment: " + err.message, "error");
+                            showStatusMessage("Error verifying payment: " + err.message, "error");
                         }
                     } else {
                         // Direct Frontend Checkout Success
-                        showStatusMessage("✅ Payment Successful! Reference Payment ID: " + response.razorpay_payment_id, "success");
+                        showStatusMessage("Payment Successful! Reference Payment ID: " + response.razorpay_payment_id, "success");
                     }
                 },
                 modal: {
                     ondismiss: function () {
-                        showStatusMessage("⚠️ Payment cancelled by user.", "warning");
+                        showStatusMessage("Payment cancelled by user.", "warning");
                     }
                 },
                 theme: {
@@ -730,7 +927,7 @@
 
             rzp.on('payment.failed', function (response) {
                 const reason = (response.error && response.error.description) ? response.error.description : "Transaction failed";
-                showStatusMessage("❌ Payment Failed: " + reason, "error");
+                showStatusMessage("Payment Failed: " + reason, "error");
             });
 
             rzp.open();
