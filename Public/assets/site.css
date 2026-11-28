@@ -44,3 +44,68 @@
 .payment-price{display:block;color:#fff;font:800 30px Manrope;margin:24px 0}.payment-price small{font:500 12px 'DM Sans';color:#a9bdd7}.payment-footnote{color:#90a5c2;font-size:12px;margin-top:22px}
 @media(max-width:700px){.brand-mark{width:40px!important;height:40px!important;flex:0 0 40px!important}.hero{padding:65px 0 55px!important;min-height:0!important}.hero h1{font-size:clamp(42px,11vw,55px)!important}.visual{min-height:300px!important}.orb{width:230px!important}.section{padding:74px 0!important}.payment-choice-grid{grid-template-columns:1fr}.payment-choice{padding:25px}.page-hero{padding:58px 0 50px!important}}
 @media(prefers-reduced-motion:reduce){.orb,.orb:before,.orb:after,.float-card{animation:none!important}}
+
+/* PAYMENT PAGE COMPLETE LAYOUT — MOBILE FIRST */
+.payment-page{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 82% 10%,#164c8a55,transparent 36%),radial-gradient(ellipse at 5% 85%,#126b9850,transparent 36%),#080f20;color:#f5f8ff;padding:76px 0 88px;min-height:68vh;font-family:'DM Sans',Arial,sans-serif}
+.payment-page:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.17;background-image:linear-gradient(#8bbcff20 1px,transparent 1px),linear-gradient(90deg,#8bbcff20 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(90deg,transparent,#000)}
+.payment-shell{width:min(1080px,calc(100% - 48px));margin:0 auto;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(330px,.8fr);gap:28px;align-items:stretch}
+.payment-info,.payment-form{border:1px solid #ffffff22;border-radius:28px;padding:clamp(26px,4vw,42px);box-shadow:0 25px 75px #0003}
+.payment-info{background:linear-gradient(145deg,#122746e8,#0d1a30e8);backdrop-filter:blur(18px)}
+.payment-info .eyebrow{color:#72d7ff;font-size:11px;letter-spacing:.17em;font-weight:800}
+.payment-info h1{font:800 clamp(38px,5vw,58px)/1.06 'Manrope',Arial,sans-serif;letter-spacing:-.055em;color:#fff;margin:22px 0}
+.payment-info>p{font-size:16px;line-height:1.8;color:#bdcce0}
+.payment-info ul{list-style:none;margin:28px 0;padding:0;display:grid;gap:14px}
+.payment-info li{color:#d8e5f6;font-size:14px;line-height:1.5;display:flex;gap:12px}
+.payment-info li:before{content:"✓";color:#68d9ff;font-weight:900}
+.payment-form{background:linear-gradient(150deg,#fff,#f0f6ff);color:#12213a;display:flex;flex-direction:column;justify-content:center}
+.payment-form h2{font:800 26px/1.2 'Manrope',Arial,sans-serif;color:#12213a;margin:0 0 10px}
+.payment-form>p{font-size:14px;line-height:1.65;color:#65758d}
+.payment-price{font:800 48px/1.2 'Manrope',Arial,sans-serif;color:#12213a!important;margin:24px 0}
+.payment-form .btn{width:100%;min-height:54px;display:flex;justify-content:center;align-items:center;text-decoration:none;font-weight:800;border:0;cursor:pointer}
+.payment-form .btn-primary{background:linear-gradient(110deg,#2468ed,#1aa8d6)!important;color:#fff!important}
+.payment-form .btn-ghost{background:#e9f1ff!important;color:#1e4d91!important;border:1px solid #d7e5fa!important}
+.payment-form input{width:100%;height:54px;padding:0 16px;border:1px solid #d6e0ed;border-radius:13px;background:#fff;color:#10213a;font:600 16px 'DM Sans',Arial,sans-serif;margin:10px 0 18px;box-sizing:border-box}
+.payment-form label{color:#34445b}
+.payment-form .secure-note{font-size:11px;line-height:1.6;color:#8190a5;margin:18px 0 0}
+.payment-form a:not(.btn){color:#2364c5}
+.payment-alert{padding:12px 14px;border-radius:12px;margin-top:14px;font-size:13px;display:none}
+.payment-alert:not(:empty){display:block}
+.payment-shell+.payment-shell{margin-top:20px}
+.payment-page .wrap{position:relative}
+.payment-page a{overflow-wrap:anywhere}
+.founder-profile{display:grid;grid-template-columns:minmax(220px,.7fr) 1.3fr;gap:42px;align-items:center;margin:58px 0;padding:clamp(24px,5vw,48px);border-radius:28px;background:linear-gradient(125deg,#0b1730,#123a68);color:#fff;overflow:hidden;position:relative}
+.founder-visual{min-height:270px;border-radius:22px;background:radial-gradient(circle at 50% 42%,#397ce9,#112b55 60%,#081326);display:grid;place-items:center;position:relative;overflow:hidden}
+.founder-monogram{width:142px;height:142px;border-radius:44px;display:grid;place-items:center;background:linear-gradient(145deg,#effaff,#7bd6ff 45%,#3674e8);color:#0b1c3a;font:900 48px 'Manrope',Arial,sans-serif;box-shadow:0 25px 65px #020b2b99;z-index:2}
+.founder-orbit{position:absolute;width:225px;height:225px;border:1px solid #a5e6ff77;border-radius:50%;transform:rotateX(65deg)}
+.founder-orbit-b{width:270px;height:270px;transform:rotateY(65deg)}
+.founder-chip{position:absolute;bottom:18px;font-size:9px;letter-spacing:.18em;color:#d5eaff}
+.founder-copy .eyebrow{color:#75d9ff}.founder-copy h2{font:800 clamp(28px,4vw,42px)/1.1 'Manrope',Arial,sans-serif;color:#fff;letter-spacing:-.04em;margin:14px 0}
+.founder-copy h3{font:700 18px 'Manrope',Arial,sans-serif;color:#fff}.founder-copy h3 span{font:500 13px 'DM Sans',Arial,sans-serif;color:#a9c2df}
+.founder-copy p{font-size:14px;line-height:1.8;color:#c4d4e8}
+.founder-values,.app-feature-pills{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}
+.founder-values span,.app-feature-pills span{border:1px solid #ffffff30;background:#ffffff0b;padding:8px 12px;border-radius:999px;font-size:11px;color:#e4f3ff}
+.app-spotlight{display:grid;grid-template-columns:.9fr 1.1fr;border-radius:28px;overflow:hidden;background:#09162c;box-shadow:0 24px 70px #081b351c}
+.app-art{min-height:330px;display:grid;place-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 45%,#2869c8,#10274b 48%,#081326)}
+.app-icon-art{width:120px;height:120px;border-radius:36px;background:linear-gradient(145deg,#eafaff,#62c9ff 40%,#2767dd);display:grid;place-items:center;box-shadow:0 25px 70px #020b2b88;z-index:2;transform:rotate(-8deg)}
+.app-icon-art span{font:900 62px 'Manrope',Arial,sans-serif;color:#0b1b37}.app-icon-art i{position:absolute;width:10px;height:10px;border-radius:50%;background:#fff;transform:translate(38px,-39px);box-shadow:0 0 22px #fff}
+.app-orbit{position:absolute;width:230px;height:230px;border:1px solid #91dfff66;border-radius:50%;transform:rotateX(65deg)}.app-orbit-two{width:290px;height:290px;transform:rotateY(65deg)}
+.app-art-caption{position:absolute;bottom:22px;color:#b9d9ff;font-size:9px;letter-spacing:.22em}
+.app-copy{padding:clamp(25px,4vw,42px);color:#fff;align-self:center}.app-copy .project-label{color:#74d8ff}.app-copy h3{font:900 42px 'Manrope',Arial,sans-serif;letter-spacing:.08em;margin:15px 0}.app-copy p{font-size:14px;line-height:1.8;color:#c1d0e5}.app-copy .app-trust-note{font-size:11px;color:#90a8c8;margin-top:22px}
+@media(max-width:760px){
+ .payment-page{padding:26px 0 48px;min-height:0}
+ .payment-shell{width:calc(100% - 30px);grid-template-columns:1fr;gap:14px}
+ .payment-info,.payment-form{padding:24px;border-radius:22px}
+ .payment-info h1{font-size:clamp(34px,9vw,46px);margin:15px 0}
+ .payment-info>p{font-size:14px;line-height:1.7}
+ .payment-info ul{margin:20px 0;gap:11px}
+ .payment-info li{font-size:13px}
+ .payment-form h2{font-size:23px}
+ .payment-price{font-size:42px;margin:18px 0}
+ .founder-profile{grid-template-columns:1fr;gap:22px;margin:36px 0;padding:20px}
+ .founder-visual{min-height:220px}
+ .founder-monogram{width:118px;height:118px;font-size:40px;border-radius:36px}
+ .app-spotlight{grid-template-columns:1fr}
+ .app-art{min-height:245px}
+ .app-copy{padding:25px}
+}
+@media(max-width:390px){.brand-name{font-size:11px!important;letter-spacing:.04em!important}.brand-sub{font-size:7px!important;letter-spacing:.09em!important}.nav{gap:7px}.brand{gap:7px}.payment-shell{width:calc(100% - 24px)}}
